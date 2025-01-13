@@ -45,9 +45,8 @@
 // Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente due input e un bottone (non stilizzati), realizziamo le specifiche scritte sopra. La risposta finale (o output) sarà anch’essa da scrivere in console.
 
 // Dom accesso element input
-const età = document.getElementById("input2")
+const eta = document.getElementById("input2")
 const km = document.getElementById("input1")
-const button = document.getElementById("set-button")
 const form = document.getElementById("set-form")
 
 // Output
@@ -74,20 +73,30 @@ form.addEventListener("submit", function(event){
 
     // Imposto condizione 
 
-    if(età.value <= 18){
-        console.log("Sei minorenne hai diritto solo al 20% di sconto sul biglietto, Pagherai:",risultatoSconto1.toFixed(2) + " €")
-    }else if(età.value >= 65){
-        console.log("Hai superato i 65 anni, hai diritto a uno sconto del 40% sul biglietto, Pagherai:",risultatoSconto2.toFixed(2) + " €")
-    }else{
-        console.log("Non hai diritto a nessuno sconto, Pagherai:",prezzoBiglietto.toFixed(2) + " €")
+    if(eta.value <= 18){
+        // console.log("Sei minorenne hai diritto solo al 20% di sconto sul biglietto, Pagherai:",risultatoSconto1.toFixed(2) + " €")
+        // STAMPO A VIDEO
+        outputRisultato2.innerHTML= "Sei minorenne hai diritto solo al 20% di sconto sul biglietto, Pagherai:" + risultatoSconto1.toFixed(2) + " €"
+    
+    }else if(eta.value >= 65){
+        // console.log("Hai superato i 65 anni, hai diritto a uno sconto del 40% sul biglietto, Pagherai:",risultatoSconto2.toFixed(2) + " €")
+
+        // STAMPO A VIDEO
+        outputRisultato2.innerHTML= "Hai superato i 65 anni, hai diritto a uno sconto del 40% sul biglietto, Pagherai:" + risultatoSconto2.toFixed(2) + " €"
+
+    } else{
+        // console.log("Non hai diritto a nessuno sconto, Pagherai:",prezzoBiglietto.toFixed(2) + " €")
+
+        // STAMPO A VIDEO
+        outputRisultato2.innerHTML= "Non hai diritto a nessuno sconto, Pagherai: " + prezzoBiglietto.toFixed(2) + " €"
     }
 
-    // Prendi i selettori di output e scrivi dentro i valori presi dagli input
-    outputRisultato1.innerText= età.value
-    outputRisultato2.innerText= prezzoBiglietto.value
+   
 
     
 })
+
+
 
 
 
