@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#set-form{
+
+}
+.container-1 input{
+    width: 100%;
+}
+
+.container-2 input{
+    width: 100%;
+}
+
+.container-1{
+    padding-bottom: 20px;
+}
