@@ -49,14 +49,22 @@ const eta = document.getElementById("input2")
 const km = document.getElementById("input1")
 const form = document.getElementById("set-form")
 
+
 // Output
 const outputRisultato1= document.getElementById("outputRisultato1")
 const outputRisultato2= document.getElementById("outputRisultato2")
+
+
+
+
+
 
 // evento al form per non far ricarica la pagina
 form.addEventListener("submit", function(event){
     
     event.preventDefault();  //Gli diciamo di bloccare la ricarica della pagina che avviene con il form 
+
+
 
     // - il prezzo del biglietto è definito in base ai km (0.21 € al km)
     let prezzoBiglietto = (0.21 * km.value)
@@ -91,23 +99,7 @@ form.addEventListener("submit", function(event){
         outputRisultato2.innerHTML= "Non hai diritto a nessuno sconto, Pagherai: " + prezzoBiglietto.toFixed(2) + " €"
     }
 
-   
-
     
 })
 
 
-
-
-
-// evento al button per dare il risultato dello sconto del 20% oppure 40%
-// button.addEventListener("click",function (){
-
-    
-
-    
-
-
-
-    
-// })

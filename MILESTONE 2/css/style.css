@@ -1,0 +1,149 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    
+}
+
+body h1{
+    font-size: 40px;
+    text-align: center;
+    color: greenyellow;
+}
+
+.container{
+    height: 90vh;
+    background-image: url(../img/stazione-milano-1-1024x683.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+/* form */
+#set-form{
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);;
+    width: 80%;
+    height: 25vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* containerNomeKm */
+.containerNomeKm{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100px;
+    /* background-color: rebeccapurple; */
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 10%;
+}
+
+.container-1,
+.container-2 {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px; 
+  align-items: center;
+}
+
+.containerNomeKm input{
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 6px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+
+.containerNomeKm label{
+    color:red;
+}
+
+
+/* container 2 maggiorenne min */
+.container-2 select{
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 6px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.container-2 label{
+    color:red;
+}
+
+/* button container */
+.containerButton{
+    display: flex;
+    /* background-color: red; */
+    /* height: 60px; */
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-between;
+    width: 40%;
+}
+
+
+
+/* div button set */
+
+.set-div{
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);;
+    border-radius: 5px;
+    height: 25vh;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+/* Section bottone */
+#button{
+    /* padding-top: 20px; */
+}
+.set-button{
+    border: 2px solid black;
+    background-color: greenyellow;
+    cursor: pointer;
+    padding: 6px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.set-button1{
+    border: 2px solid black;
+    background-color: red;
+    cursor: pointer;
+    padding: 6px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
