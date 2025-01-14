@@ -51,7 +51,6 @@ const form = document.getElementById("set-form")
 
 
 // Output
-const outputRisultato1= document.getElementById("outputRisultato1")
 const outputRisultato2= document.getElementById("outputRisultato2")
 
 
