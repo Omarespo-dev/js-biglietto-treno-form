@@ -40,13 +40,6 @@ form.addEventListener("submit", function(event){
     // 
     // fasciaEta.innerHTML = eta.options[eta.selectedIndex].text;
     fasciaEta.innerHTML = eta.options[eta.selectedIndex].text;
-    
-
-
-
-    // ETA SECTION MAGGIORENNE MINORENNE
-   
-   
 
 
     event.preventDefault();  //Gli diciamo di bloccare la ricarica della pagina che avviene con il form 
