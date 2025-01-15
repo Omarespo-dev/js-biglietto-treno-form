@@ -26,6 +26,7 @@ form.addEventListener("submit", function(event){
     const kmSet = document.getElementById("kmSet")
     const cpCode = document.getElementById("cp-code")
     const costoBiglietto = document.getElementById("costoBiglietto")
+    const eta = document.getElementById("input2")
 
     // Nome e cognome PRENDI SELETTOREE DI OUTPUT E SCRIVI DENTRO I VALORI DI INPUT
     passegero.innerHTML = nomeCognome.value
@@ -38,16 +39,13 @@ form.addEventListener("submit", function(event){
 
     // 
     // fasciaEta.innerHTML = eta.options[eta.selectedIndex].text;
-
+    fasciaEta.innerHTML = eta.options[eta.selectedIndex].text;
     
 
 
 
     // ETA SECTION MAGGIORENNE MINORENNE
-    const eta = document.getElementById("input2")
-    const option = eta.selectedIndex;
-    document.getElementById("fasciaEta").innerHTML = eta.options[option].text;
-
+   
    
 
 
@@ -71,14 +69,12 @@ form.addEventListener("submit", function(event){
     
 
     // Imposto condizione 
-    if(eta  <= 18 ){
-        // eta = risultatoSconto1.toFixed(2)
+    if(eta.value  === "opt1" ){
         // PRENDI SELETTOREE DI OUTPUT E SCRIVI DENTRO I VALORI DI INPUT
         costoBiglietto.innerHTML =  risultatoSconto1.toFixed(2) + " €"
-    }else if(eta >= 65){
-       
-        costoBiglietto.innerHTML =  risultatoSconto2.toFixed(2) 
-    } else{
+    }else if(eta.value === "opt3"){
+        costoBiglietto.innerHTML =  risultatoSconto2.toFixed(2) + " €"
+    } else {
         costoBiglietto.innerHTML = prezzoBiglietto.toFixed(2) + " €"
     }
 
